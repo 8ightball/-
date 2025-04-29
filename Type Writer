@@ -3,32 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>타자기 효과</title>
+    <title>타자기 키패드</title>
     <style>
-        .typewriter {
-            font-family: monospace;
-            display: inline-block;
-            overflow: hidden;
-            border-right: .15em solid black;
-            white-space: nowrap;
-            margin: 0 auto;
-            letter-spacing: .15em;
-            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        .keyboard {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
         }
-
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
+        .row {
+            display: flex;
+            margin-bottom: 5px;
         }
-
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: black; }
+        .key {
+            width: 40px;
+            height: 40px;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #999;
+            border-radius: 3px;
+            background-color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <h1 class="typewriter">안녕하세요, 타자기 효과입니다!</h1>
-    <p class="typewriter">한양여자대학교, 빅데이터과, 2201756, 이주현</p>
+
+<div class="keyboard">
+    <div class="row">
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key">0</div>
+    </div>
+    <div class="row">
+        <div class="key">q</div>
+        <div class="key">e</div>
+        <div class="key">w</div>
+        <div class="key">r</div>
+        <div class="key">t</div>
+        <div class="key">y</div>
+        <div class="key">u</div>
+        <div class="key">i</div>
+        <div class="key">o</div>
+        <div class="key">p</div>
+    </div>
+    <div class="row">
+        <div class="key">a</div>
+        <div class="key">s</div>
+        <div class="key">d</div>
+        <div class="key">f</div>
+        <div class="key">g</div>
+        <div class="key">h</div>
+        <div class="key">j</div>
+        <div class="key">k</div>
+        <div class="key">l</div>
+        <div class="key">;</div>
+    </div>
+    <div class="row">
+        <div class="key">z</div>
+        <div class="key">x</div>
+        <div class="key">c</div>
+        <div class="key">v</div>
+        <div class="key">b</div>
+        <div class="key">n</div>
+        <div class="key">m</div>
+        <div class="key">,</div>
+        <div class="key">.</div>
+        <div class="key">/</div>
+    </div>
+</div>
+<p class="typewriter">한양여자대학교, 빅데이터과, 2201756, 이주현</p>
 </body>
 </html>
